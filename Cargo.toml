@@ -1,0 +1,17 @@
+[package]
+name = "double-entry"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Immutable double-entry accounting core — append-only journals, balanced posting, period close, and reversal by counter-entry"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/WyattAu/double-entry"
+keywords = ["accounting", "ledger", "double-entry", "bookkeeping", "journal"]
+categories = ["accounting", "database"]
+exclude = ["/target"]
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+indexing_slicing = "deny"
+panic = "deny"
