@@ -7,7 +7,7 @@ description = "Immutable double-entry accounting core — append-only journals, 
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/WyattAu/double-entry"
 keywords = ["accounting", "ledger", "double-entry", "bookkeeping", "journal"]
-categories = ["accounting", "database"]
+categories = ["database", "business"]
 exclude = ["/target"]
 
 [lints.clippy]
