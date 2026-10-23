@@ -1,4 +1,5 @@
 # double-entry
+[![Estate integration](https://github.com/WyattAu/estate-integration/actions/workflows/ci.yml/badge.svg)](https://github.com/WyattAu/estate-integration/actions/workflows/ci.yml)
 
 Immutable double-entry accounting core: append-only journals, balanced posting,
 period close, and correction by counter-entry.
