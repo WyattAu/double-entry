@@ -1,9 +1,9 @@
 [package]
 name = "double-entry"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.85"
-description = "Immutable double-entry accounting core — append-only journals, balanced posting, period close, and reversal by counter-entry"
+description = "Immutable double-entry accounting core: append-only journals, balanced posting, period close, reversal by counter-entry"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/WyattAu/double-entry"
 keywords = ["accounting", "ledger", "double-entry", "bookkeeping", "journal"]
