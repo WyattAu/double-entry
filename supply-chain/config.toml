@@ -1,0 +1,12 @@
+
+# cargo-vet config file
+
+[cargo-vet]
+version = "0.10"
+
+[policy.double-entry]
+audit-as-crates-io = true
+
+[[exemptions.double-entry]]
+version = "0.1.1"
+criteria = "safe-to-deploy"
