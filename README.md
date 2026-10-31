@@ -5,7 +5,7 @@ Immutable double-entry accounting core: append-only journals, balanced posting,
 period close, and correction by counter-entry.
 
 **API-first. No UI.** This is the accounting core for an SME ledger, not an
-application — it has no HTTP layer, no database, and no opinions about your
+application; it has no HTTP layer, no database, and no opinions about your
 framework.
 
 ## Why this exists
@@ -14,7 +14,7 @@ No standard defines this. ISO 20022's `StsId` is message-level, not
 journal-entry-level; IFRS specifies recognition and derecognition and says
 nothing about immutability; nothing in ISO 4217 or the double-entry literature
 defines `draft`/`posted`/`void` for a journal entry. So every rule here is a
-**documented choice**, modelled on TigerBeetle's append-only postings — not a
+**documented choice**, modelled on TigerBeetle's append-only postings; not a
 citation. That is stated in the module docs too, so nobody later mistakes a
 decision for a standard.
 
@@ -38,7 +38,7 @@ ledger has moved on.
 
 ## Money, and why there is no default rounding mode
 
-`Amount` is an exact integer at an explicit scale — no float anywhere. The
+`Amount` is an exact integer at an explicit scale; no float anywhere. The
 currency's exponent is data: 1000 JPY minor units is `1000`, and 1000 USD minor
 units is `10.00`.
 
@@ -63,7 +63,7 @@ Two currency modelling details that bite:
   them makes "is this integral?" unanswerable.
 - **MRO and MGA are 1/5-scaled but ISO 4217 codes them as exponent `2`.** An
   integer count of minor units cannot represent a fifth, so they are refused
-  rather than treated as decimal — which would be off by a factor of five on
+  rather than treated as decimal; which would be off by a factor of five on
   remittance with no error anywhere.
 
 ## Usage
